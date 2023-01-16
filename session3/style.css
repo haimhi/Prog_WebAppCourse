@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+}
+
+nav {
+    background: #859141;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.navbar li , a {
+    list-style-type: none;
+    width: 4em;
+    height: 3em;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    margin: 1em;
+}
+
+article {
+    background: white;
+}
+
+footer {
+    background-color: rgb(180, 180, 180);
+    size: 6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 3em;
+    margin: 0 auto;
+}
+
+footer p.text_blue {
+    color: #2b2bc9;
+}
+
