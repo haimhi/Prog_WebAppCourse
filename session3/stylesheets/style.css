@@ -4,6 +4,7 @@ body {
 
 nav {
     background: #bbbbbb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -28,6 +29,7 @@ a {
     color: white;
     margin: 1em;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .img_wrap {
@@ -38,7 +40,7 @@ a {
 
 article {
     background: white;
-    /* padding: 1em 0; */
+    padding: 0 0 1em 0;
     margin: -1em 0 0 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -51,20 +53,24 @@ article p , .img_wrap{
     margin-left: 1.8em;
 }
 
+.page1_article {
+    padding: 1em 0;
+}
+
 .new_page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer {
     background-color: rgb(151, 150, 150);
-    size: 6em;
+    padding: 0.5em 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 footer p {
-    font-size: 3em;
+    font-size: 1em;
     margin: 0 auto;
 }
 
