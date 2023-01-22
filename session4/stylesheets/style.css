@@ -1,0 +1,16 @@
+#page {
+    width: 100%;
+    font-size: 26px;
+}
+
+#nav {
+    height: 275px;
+}
+
+#main {
+    height: 765px;
+}
+
+#footer {
+    height: 380px;
+}
