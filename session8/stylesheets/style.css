@@ -1,0 +1,99 @@
+.all
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+.header
+{
+    background-image: url("../images/32b.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 2em;
+    color: white;
+}
+
+.logo h1
+{
+
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logo h1.light
+{
+    font-weight: 100;
+}
+
+.header_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.header_menu li {
+    text-transform: capitalize;
+  float: left;
+}
+
+.header_menu li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header_menu li a:hover {
+  background-color: #111;
+}
+
+.header_menu .active {
+  color: black;
+  text-decoration: underline;
+}
+
+.header_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+}
+
+.main {
+    background-image: url(../images/main_section.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 935px;
+}
+
+.footer {
+    background-image: url(../images/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 470px;
+}
+
+
