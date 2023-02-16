@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+
+
+@media (min-width: 768px) {
+    
+}
+
+
+
+/* Networking Devices */
+
+position: absolute;
+left: 29.9%;
+right: 62.76%;
+top: 38.24%;
+bottom: 5.88%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
