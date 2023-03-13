@@ -89,3 +89,25 @@ msgEx();
 (() => {
   console.log("hello lambda");
 })()
+
+
+// Callback
+
+function pui(callback) {
+  let name = prompt("enter you name:");
+  callback(name);
+}
+
+function greeting(name) {
+  console.log('hello ' + name);
+}
+
+function greetingonDuc(name) {
+  document.body.innerHTML = 'hello ' + name;
+}
+
+pui(greeting);
+pui(greetingonDuc);
+pui((name) => {
+  console.log("hello anonim function: " + name);
+})
