@@ -3,7 +3,7 @@
 let username = "Haim Hillel";
 
 function printMsg() {
-    console.log("Good evening");
+    console.log("Good evening " + username);
     return true;
 }
 
@@ -34,13 +34,13 @@ function sumWithArg(num = 0, numM = 2) {
     let sumMulti = num * numM;
     return sumMulti;
 }
+let num1 = sumWithArg();
 
-
-let num3 = sumWithArg(4,0);
+let num3 = sumWithArg(4,4);
 let num4 = sumWithArg(6,2);
 let num5 = sumWithArg(9, 3);
-let num6 = sumWithArg();
-console.log(num3, num4, num5, num6);
+
+console.log(num1, num3, num4, num5);
 
 // Exercise
 function sefira(dayOfMonth) {
@@ -67,7 +67,7 @@ function OmerCount(days) {
     console.log(days, 'days is ', weeks, "weeks and ", daysInWeek, "days of the Omer");
 }
 
-OmerCount(15);
+OmerCount(29);
 
 
 
@@ -102,12 +102,21 @@ function greeting(name) {
   console.log('hello ' + name);
 }
 
-function greetingonDuc(name) {
-  document.body.innerHTML = 'hello ' + name;
-}
+// function greetingonDoc(name) {
+//   document.body.innerHTML = 'hello ' + name;
+// }
 
-pui(greeting);
-pui(greetingonDuc);
-pui((name) => {
-  console.log("hello anonim function: " + name);
-})
+// pui(greeting);
+// pui(greetingonDoc);
+// pui((name) => {
+//   console.log("hello anonym function: " + name);
+// })
+
+// write a function that multiplies 2 numbers
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+let x = multiply(4, 3);
+
+console.log(x);
