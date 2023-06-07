@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="importmap">
+      
+    </script>
+    <template>
+      <div id="app">
+        <div id="Stopwatch">
+          <span class="time">{{ time }}</span>
+          <div class="btn-container">
+            <button @click="start">Start</button>
+            <button @click="stop">Stop</button>
+            <button @click="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script>
+
+    import Vue from 'vue';
+
+      export default {
+        name: "Stopwatch",
+        data() {
+          return {
+            time: "00:00:00",
+            isRunning: false,
+            interval: null,
+          };
+        },
+        methods: {
+          start() {
+            if (this.isRunning) return;
+            this.interval = setInterval(() => {
+              this.time = this.formatTime(Date.now() - this.startTime);
+            }, 1000);
+            this.isRunning = true;
+          },
+          stop() {
+            if (!this.isRunning) return;
+            clearInterval(this.interval);
+            this.isRunning = false;
+          },
+          reset() {
+            this.time = "00:00:00";
+            this.isRunning = false;
+            clearInterval(this.interval);
+          },
+          formatTime(time) {
+            const hours = Math.floor(time / (60 * 60 * 1000));
+            const minutes = Math.floor(
+              (time - hours * (60 * 60 * 1000)) / (60 * 1000)
+            );
+            const seconds = Math.floor(
+              (time - hours * (60 * 60 * 1000) - minutes * (60 * 1000)) / 1000
+            );
+            return `${hours}:${minutes}:${seconds}`;
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
